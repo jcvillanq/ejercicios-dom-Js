@@ -67,8 +67,25 @@ img{
     left: 0;
     width: 100%;
     background-color: var(--second-modal-color);
+    /* Usando opacity */
+    /* opacity: 0;
+    transition: opacity 0.5s ease;
+     */
+    /* Usando transform */
+    transition: transform 0.3s ease;
     /* de arriba */
     transform:translate(0, -100%);
+    /* de abajo */
+    transform:translate(0, -100%);
+    /* de derecha*/
+    transform:translate(100%, 0);
+    /* de izquierda */
+    transform:translate(-100%,0);
+
+}
+.panel.is-active{
+   /*  opacity: 1; */
+    transform:translate(0,0);
 }
 
 .panel-btn{
